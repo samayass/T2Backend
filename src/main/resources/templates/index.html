@@ -12,64 +12,46 @@
 <th:block layout:fragment="body" th:remove="tag">
     <!-- Start of body content specific to page -->
     <div class="px-5 py-5 mx-auto">
-        <h1><strong>Fib's Math</strong></h1>
-        <div class="row">
-            <div class="col-4">
-                <div class="card">
-                    <img class="card-img-top" th:src="@{/images/java.png}" alt="Java Development" height="250">
-                    <div class="card-body">
-                    <h5 class="card-title">What should Java Developers learn?</h5>
-                    <p class="card-text">
-                        <ol>
-                            <li>Java 11-17 is used for PBL. Java 8 appears to be College Board standard.  Java features like Reactive Streams, HTTP2 client, JShell, React JS are more recent than 8.</li>
-                            <li>GitHub.  Learning to master managing change, branches, pull requests, and more.</li>
-                            <li>Development DevOps. Java programmers should have a passion for managing the environment and learning automation (Git, Maven, Docker).</li>
-                            <li>REST and Microservice using Spring.  Mastering creating and consuming RESTful APIs</li>
-                        </ol>
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <img class="card-img-top" th:src="@{/images/spring.png}" alt="Spring Development" height="250">
-                    <div class="card-body">
-                    <h5 class="card-title">What is Spring?</h5>
-                    <p class="card-text">
-                        <ol>
-                            <li>Spring Framework is the most popular application development framework of Java. </li>
-                            <li>Spring Boot helps to create a stand-alone application with less configuration.</li>
-                            <li>Spring MVC is a model view controller-based web framework under the Spring framework.</li>
-                            <li>ThymeLeaf is a server-side Java template engine, supports HTML5 JVM web development, and provides full integration with Spring Framework.</li>
-                        </ol>
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <img class="card-img-top" th:src="@{/images/pojo.jpeg}" alt="Java Persistence" height="250">
-                    <div class="card-body">
-                    <h5 class="card-title">How do you create Persistent data?</h5>
-                    <p class="card-text">
-                        <ol>
-                            <li>Java Persistent API (JPA) provides a query language that allows create, read, update, and delete objects from a database.</li>
-                            <li>Beans, Controller Code, and Business logic interact with the JPA to manage data in and out of the Database.</li>
-                            <li>An Object-Relational Model (ORM) mapping Java classes (entities + supporting structures) with a relational database</li>
-                            <li>Plain Old Java Objects (POJO) are the Class definitions that are foundations for JPA and ORM, see the @entity declaration over the Class definition.</li>
-                        </ol>
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
+        <h1><strong>Have All Your<br> Math Tools<br>In One Place</strong></h1>
+        <p>Find Tools Like Stapplet, Desmos, Random<br>Generators, Derivative Calculators and So Much<br>More!</p>
+        <a id=button1 href="#" class="btn btn-primary">Go somewhere</a>
+        <a id=button2 href="#" class="btn btn-primary">Go somewhere</a>
+            <img height="674" width="579"id="index-image"src="images/index-image.png" alt="Index">            
     <!-- End of body content specific to page -->
 </th:block>
 </body>
 
 </html>
+
+<style>
+    #index-image{
+        position:absolute;
+        left:860px;
+        top:130px;
+    }
+    h1 {
+        text-align: center;
+        position:absolute;
+        left:260px;;
+        top:180px;
+    }
+    p {
+        text-align: center;
+        position:absolute;
+        left:280px;;
+        top:450px;
+    }
+    #button1{
+        position:absolute;
+        left:320px;;
+        top:600px;
+        background-color:#C0D6DF;
+    }
+
+    #button2{
+        position:absolute;
+        left:460px;;
+        top:600px;
+        background-color:#C0D6DF;
+    }
+</style>

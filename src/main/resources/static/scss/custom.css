@@ -81,7 +81,7 @@ $theme-colors: (
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 161, 169, 189;
-  --bs-secondary-rgb: 91, 157, 130;
+  --bs-secondary: #F1F7F8;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -149,12 +149,12 @@ hr:not([size]) {
 }
 
 h1, .dark-mode .h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.375rem + 2vw);
   font-family: var(--bs-font-sans-serif-header);
 }
 @media (min-width: 1200px) {
   h1, .dark-mode .h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
 

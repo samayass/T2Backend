@@ -2,7 +2,7 @@
 
 <!-- Begin navigation fragments -->
 <th:block xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/extras/spring-security" th:fragment="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav id=nav class="navbar navbar-expand-lg navbar-light bg-secondary">
         <div class="container-fluid">
             <div class="btn-group">
                 <img alt="" class="d-inline-block align-center"
@@ -10,7 +10,7 @@
                         th:src="@{/images/ncs_logo.png}"
                         height="50"
                         width="auto">
-                <a class="navbar-brand" th:href="@{https://nighthawkcodingsociety.com}">Nighthawk Coders</a>
+                <a id=title class="navbar" th:href="@{/}">Fib's Math</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -161,3 +161,12 @@
         </div>
     </nav>
 </th:block>
+
+<style>
+    #nav{
+    background-color:#F1F7F8
+    }
+    #title{
+        font-family:var(--bs-font-sans-serif-header)
+    }
+</style>
