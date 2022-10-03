@@ -11265,8 +11265,8 @@ html, body {
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #455a64;
+  --bs-body-color: #F1F7F8;
+  --bs-body-bg: #166088;  
 }
 .dark-mode *,
 .dark-mode *::before,
