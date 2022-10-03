@@ -15,11 +15,11 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 @Controller // HTTP requests are handled as a controller, using the @Controller annotation
-public class Api {
+public class ApiIris {
 
     // CONTROLLER handles GET request for /birds, maps it to birds() method
-    @GetMapping("/api")
-    public String api(Model model) throws IOException, InterruptedException, ParseException {
+    @GetMapping("/apiiris")
+    public String apiiris(Model model) throws IOException, InterruptedException, ParseException {
         HttpRequest request = HttpRequest.newBuilder()
 		.uri(URI.create("https://tennisapi1.p.rapidapi.com/api/tennis/player/14486"))
 		.header("X-RapidAPI-Key", "ebb6f1a376mshadb02bb5506cb0fp127f56jsncb975393d040")
