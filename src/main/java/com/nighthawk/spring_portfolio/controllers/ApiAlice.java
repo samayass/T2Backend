@@ -15,7 +15,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 @Controller // HTTP requests are handled as a controller, using the @Controller annotation
-public class ApiAlice {
+public class Apialice {
 
     // CONTROLLER handles GET request for /birds, maps it to birds() method
     @GetMapping("/apialice")
