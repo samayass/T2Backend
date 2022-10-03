@@ -37,7 +37,7 @@ public class ApiIris {
         // pass stats to view
         model.addAttribute("jobject", jobject);
 
-        return "api";
+        return "apiiris";
 
     }
 }
