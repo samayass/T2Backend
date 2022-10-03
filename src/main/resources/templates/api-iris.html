@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html
+  xmlns:layout="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.w3.org/1999/xhtml"
+  layout:decorate="~{layouts/base}"
+  lang="en"
+>
+  <div layout:fragment="head" th:remove="tag">
+    <!-- Page specific head additions -->
+    <title>Tennis Players</title>
+
+  </div>
+
+  <!-- <body> -->
+  <div layout:fragment="body" th:remove="tag">
+    <!-- Page specific body additions -->
+    <div class="container">
+      <h1 style="text-align: center; font-size: 50px">
+        Tennis Players </h1>
+
+      <table class="players" border="1">
+        <tr>
+          <th>Name</th>
+          <th>Birthplace</th>
+          <th>Turned Pro</th>
+          <th>Handed</th>
+        </tr>
+        <tr th:each="player : ${jobject.data}">
+          <td th:text="${player.fullName}"></td>
+          <td th:text="${player.Birthplace}"></td>
+          <td th:text="${player.turnedPro}"></td>
+          <td th:text="${player.plays}"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+</html>
+
+<style>
+    .players {
+        position:absolute;
+        left:550px;
+        text-align: center;
+        padding-right:30%;
+    }
+</style>
