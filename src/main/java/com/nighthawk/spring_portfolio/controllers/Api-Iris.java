@@ -21,7 +21,7 @@ public class Api {
     @GetMapping("/api")
     public String api(Model model) throws IOException, InterruptedException, ParseException {
         HttpRequest request = HttpRequest.newBuilder()
-		.uri(URI.create("https://tennisapi1.p.rapidapi.com/api/tennis/search/nadal"))
+		.uri(URI.create("https://tennisapi1.p.rapidapi.com/api/tennis/player/14486"))
 		.header("X-RapidAPI-Key", "ebb6f1a376mshadb02bb5506cb0fp127f56jsncb975393d040")
 		.header("X-RapidAPI-Host", "tennisapi1.p.rapidapi.com")
 		.method("GET", HttpRequest.BodyPublishers.noBody())
