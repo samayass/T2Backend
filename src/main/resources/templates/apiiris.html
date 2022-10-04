@@ -25,7 +25,7 @@
           <th>Turned Pro</th>
           <th>Handed</th>
         </tr>
-        <tr th:each="player : ${jobject.data}">
+        <tr th:each="player : ${jobject.team}">
           <td th:text="${player.fullName}"></td>
           <td th:text="${player.Birthplace}"></td>
           <td th:text="${player.turnedPro}"></td>
