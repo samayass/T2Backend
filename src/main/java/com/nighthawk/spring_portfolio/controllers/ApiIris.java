@@ -28,7 +28,6 @@ public class ApiIris {
 		.build();
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
 
-
         // alternative #2: convert response.body() to JSON object
         Object obj = new JSONParser().parse(response.body());
         JSONObject jobject = (JSONObject) obj;
