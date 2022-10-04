@@ -33,7 +33,6 @@ public class ApiIris {
         JSONObject jobject = (JSONObject) obj;
         System.out.println(jobject);
 
-        // pass stats to view
         model.addAttribute("jobject", jobject);
 
         return "apiiris";
